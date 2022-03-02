@@ -8,7 +8,7 @@ import DeckCreate from "./DeckCreate";
 import DeckEdit from "./DeckEdit";
 import CardCreate from "./CardCreate";
 import CardEdit from "./CardEdit";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Route, Switch } from "react-router-dom";
 
 function Layout() {
   return (

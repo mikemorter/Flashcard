@@ -38,13 +38,10 @@ function CardEdit() {
   };
   const history = useHistory();
   const handleSubmit = (event) => {
-    let output = [];
     event.preventDefault();
     console.log("Submitted:", card);
     async function updateData() {
       try {
-        const dataFromAPI = await updateCard(card);
-
         history.push(`/decks/${deckId}`);
       } catch (error) {
         if (error.name === "AbortError") {
